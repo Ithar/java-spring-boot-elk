@@ -18,6 +18,9 @@ Stack  | version |
 *Code Coverage* | n/a
 *Build env* | docker-compose
 
+### Tooling 
+- /dev/personal/software/logstash-8.0.0
+
 ### Application Build/Run (Docker)
 
 ```
@@ -26,16 +29,23 @@ docker-compose up
 ```
 
 ### Application Run (IntelliJ)
-Spring-boot application start 
+`Spring-boot application start` 
+```
+cd <LOGSTASH_HOME>
+/bin/logstash -f ./config/logstash-basic.conf
+```
 
 ### Application Install/Run (Maven)
 `mvn -gs /Users/ithar.malik/dev/personal/java/java-spring-boot-elk/setting.xml clean install`
 `mvn -gs /Users/ithar.malik/dev/personal/java/java-spring-boot-elk/setting.xml dependency:tree`
 `mvn spring-boot:run`
 
-### Application URL
+### Application URL 
 - http://localhost:8081/actuator/health (Microservice A)
 - http://localhost:8082/actuator/health (Microservice B)
+
+- http://localhost:9600 (logstash)
+- http://localhost:9200 (elastic search)
 
 ### Application GIT branches
 
