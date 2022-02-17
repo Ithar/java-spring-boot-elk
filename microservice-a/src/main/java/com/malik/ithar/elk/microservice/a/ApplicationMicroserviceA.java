@@ -36,7 +36,7 @@ public class ApplicationMicroserviceA {
         };
 
         Timer timer = new Timer();
-        timer.schedule(task, new Date(), 8000);
+        timer.schedule(task, new Date(), 27000);
 
     }
 }
