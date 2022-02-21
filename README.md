@@ -21,7 +21,7 @@ Stack  | version |
 ### Tooling 
 - /dev/personal/software/logstash-8.0.0
 - /dev/personal/software/elasticsearch-8.0.0 (with disabled ssl certification)
-- /dev/personal/software/kibana-8.0.0
+- /dev/personal/software/kibana-8.0.0 (Management > Stack Management > Data Views (Create index) )
 
 ### Application Build/Run (Docker)
 
@@ -64,7 +64,7 @@ mvn spring-boot:run
 - http://localhost:9200/_cat/indices
 - http://localhost:9200/microservice-a-2022.02.17/_search?q=*
 
-- http://localhost:5601
+- http://localhost:5601(Kibana)
 
 ### Application GIT branches
 
